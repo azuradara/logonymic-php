@@ -1,8 +1,11 @@
 # logonymic
 
-Recompute and match nymic browser fingerprints in PHP.
+Server-side PHP library for nymic browser fingerprints. Use it to compute a device ID from the data nymic collects in the browser, and to compare two IDs.
 
-In Elder Scrolls lore, the Bastion Nymic of Hermaeus Mora is defended by the Logonymic Wards. With this library, you read on the server the names that nymic collects in the browser.
+## Requirements
+
+- PHP 8.2 or later
+- `@azuradara/nymic` in the browser
 
 ## Install
 
@@ -10,34 +13,61 @@ In Elder Scrolls lore, the Bastion Nymic of Hermaeus Mora is defended by the Log
 composer require azuradara/logonymic
 ```
 
-PHP 8.1 or later.
+## In the browser
 
-## Usage
+`@azuradara/nymic` is on GitHub Packages. Add the scope to `.npmrc`, with a GitHub token that has `read:packages`:
 
-Send the `worker` object from `incant()` to your server, then recompute its nymic there. The hashes the browser sends are not used.
+```ini
+@azuradara:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}
+```
+
+```sh
+pnpm add @azuradara/nymic
+```
+
+Collect the fingerprint and send `worker` with the order:
+
+```ts
+import { incant } from '@azuradara/nymic'
+
+const { worker } = await incant()
+
+await fetch('/orders', {
+  method: 'POST',
+  headers: { 'content-type': 'application/json' },
+  body: JSON.stringify({ ...order, worker }),
+})
+```
+
+Without a bundler, load `node_modules/@azuradara/nymic/dist/nymic.js` with a script tag and call `Nymic.incant()`.
+
+## On the server
+
+Compute the nymic from `worker`:
 
 ```php
 use Logonymic\Nymic;
 
-$nymic = Nymic::of($request->getContent());
+$nymic = Nymic::of(json_decode($request->getContent())->worker);
 
 $nymic->neonymic;
 $nymic->toArray();
 ```
 
-Pass the `worker` to `Nymic::of()` as a JSON string, a decoded object or an array. Prefer the JSON string or an object: in an array, an empty object and an empty list are both decoded as `[]`.
+You can pass `Nymic::of()` a JSON string, a decoded object or an array. In an array, an empty object and an empty list are both stored as `[]`. Pass the raw JSON or an object when you can.
 
-You get five parts.
-
-| Part | What it names |
+| Field | Value |
 | --- | --- |
-| `protonymic` | The type: OS, browser and device type |
-| `tribunymic` | The hardware family, shared by phones of one model |
-| `neonymic` | This browser on this device. Use it as the ID. |
-| `egonymic` | This device across browser updates |
-| `paleonymic` | Fragments for similarity, 2 hex characters per stable signal |
+| `neonymic` | Device and browser ID. Use it as the main ID. |
+| `egonymic` | Device ID that stays the same across browser updates |
+| `tribunymic` | Hardware model, shared by devices of the same model |
+| `protonymic` | OS, browser and device type |
+| `paleonymic` | Per-signal fragments, used for `similarity` |
 
-## Matching
+Store `toArray()` with the order.
+
+## Comparing two devices
 
 ```php
 use Logonymic\Level;
@@ -45,23 +75,26 @@ use Logonymic\Nymic;
 
 $result = Nymic::from($order->nymic)->match(Nymic::from($previous->nymic));
 
-$result->level === Level::Egonymic;
-$result->similarity;
+$sameDevice = in_array($result->level, [Level::Neonymic, Level::Egonymic], true);
 ```
 
-You can pass `match()` a threshold (default `0.8`). You get the first part that matched, as a `Level`.
+You get a `MatchResult` from `match()`, with a `level` and a `similarity` from 0 to 1. Levels, from strongest to weakest.
 
-- `Neonymic`: same browser on the same device.
-- `Egonymic`: same device, most likely after a browser update.
-- `Paleonymic`: `similarity` at or above the threshold. Same device after a bigger change, or another device of the same model and setup.
-- `Tribunymic`: same hardware family.
-- `None`: anything else.
+| Level | Meaning |
+| --- | --- |
+| `Neonymic` | Same browser on the same device |
+| `Egonymic` | Same device, after a browser update |
+| `Paleonymic` | `similarity` is at or above the threshold: the same device after a bigger change, or an identical device |
+| `Tribunymic` | Same hardware model |
+| `None` | No match |
 
-`similarity` is the share of `paleonymic` fragments with the same value. Match on these together with order data (phone, address, IP).
+The threshold is `0.8` by default:
 
-## Compatibility
+```php
+$result = $a->match($b, threshold: 0.9);
+```
 
-We follow the nymic porting spec and run its test vectors (`tests/vectors.json`) in every test run. When nymic changes its vectors, we release a new version here.
+You can get the same ID for two devices of the same model, OS and browser version. Combine the result with order data such as the phone number, address and IP.
 
 ## Development
 

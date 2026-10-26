@@ -5,7 +5,7 @@
     "type": "library",
     "keywords": ["fingerprint", "device", "fraud", "nymic"],
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "ext-json": "*"
     },
     "require-dev": {
