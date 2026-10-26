@@ -72,17 +72,17 @@ use Logonymic\Nymic;
 
 $result = Nymic::from($order->nymic)->match(Nymic::from($previous->nymic));
 
-$sameDevice = in_array($result->level, [Level::Neonymic, Level::Egonymic], true);
+$sameDevice = in_array($result->level, [Level::Browser, Level::Device], true);
 ```
 
 You get a `MatchResult` from `match()`, with a `level` and a `similarity` from 0 to 1. Levels, from strongest to weakest.
 
 | Level | Meaning |
 | --- | --- |
-| `Neonymic` | Same browser on the same device |
-| `Egonymic` | Same device, after a browser update |
-| `Paleonymic` | `similarity` is at or above the threshold: the same device after a bigger change, or an identical device |
-| `Tribunymic` | Same hardware model |
+| `Browser` | Same `neonymic`: same browser on the same device |
+| `Device` | Same `egonymic`: same device, after a browser update |
+| `Similar` | `similarity` is at or above the threshold: the same device after a bigger change, or an identical device |
+| `Model` | Same `tribunymic`: same hardware model |
 | `None` | No match |
 
 The threshold is `0.8` by default:

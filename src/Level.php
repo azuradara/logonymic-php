@@ -4,9 +4,9 @@ namespace Logonymic;
 
 enum Level: string
 {
-    case Neonymic = 'neonymic';
-    case Egonymic = 'egonymic';
-    case Paleonymic = 'paleonymic';
-    case Tribunymic = 'tribunymic';
+    case Browser = 'browser';
+    case Device = 'device';
+    case Similar = 'similar';
+    case Model = 'model';
     case None = 'none';
 }

@@ -181,7 +181,7 @@
   "workers": {
     "laptop": {
       "worker": {
-        "v": 2,
+        "v": 3,
         "navigator": {
           "maxTouchPoints": 0,
           "platform": "Win32",
@@ -229,7 +229,6 @@
           }
         ],
         "canvas2d": {
-          "image": "295730788444223024308988e7692b9ff0a54657057c205dd1e5df18d118bf14",
           "paint": "fd07b8987e2a3ecb4b09e2d0c42f0c93596c1f40069f618f5d5eff3aaaba5719",
           "text": "65f1a38952741ce014e1d04d85b5155720a6c5e557c2c4c63ab8569e45cdb26b",
           "emoji": "af36ae6e703020e0ef164ffe7216a2290f378943885337e48680f3ffd00a2650",
@@ -279,14 +278,14 @@
       "nymic": {
         "protonymic": "a058f3a6a541226adec0c40d1a4bf5f36a1bfbd2e439ecf0e489fad58ffd698f",
         "tribunymic": "1f44f4df71d985e9318086047b2c1c5f3ded7031c90331324956454aaad8368e",
-        "neonymic": "782070a3a42bf1e2bd24d423059750128dbd8ae86714cca93f42d105edd85eb1",
-        "egonymic": "9a21b303caf8506c560807631096095705d40d3d61db51f652ce2cac5539ab25",
-        "paleonymic": "9ee66b774449052dda41842695d99fabcf08dc"
+        "neonymic": "d27156e4420a5cba9f497b924c9f6c8edc0f2d44444f9f087e2597464d8cedf7",
+        "egonymic": "d50ab276405838392bebd45ba421fd747e41d8aa0f1b6a081082950d99c50610",
+        "paleonymic": "9ee66b774449052d41842695d99fabcf08dc"
       }
     },
     "updated": {
       "worker": {
-        "v": 2,
+        "v": 3,
         "navigator": {
           "maxTouchPoints": 0,
           "platform": "Win32",
@@ -334,7 +333,6 @@
           }
         ],
         "canvas2d": {
-          "image": "bc6d026e617e2204b3df23eabf2ed957fb7eadbb0412697b66dc39e4b77befc0",
           "paint": "5c03f74b26cdc672070bf2d2ef45185012973b304d1194b7855025fb7d6bd105",
           "text": "65f1a38952741ce014e1d04d85b5155720a6c5e557c2c4c63ab8569e45cdb26b",
           "emoji": "af36ae6e703020e0ef164ffe7216a2290f378943885337e48680f3ffd00a2650",
@@ -384,14 +382,14 @@
       "nymic": {
         "protonymic": "a058f3a6a541226adec0c40d1a4bf5f36a1bfbd2e439ecf0e489fad58ffd698f",
         "tribunymic": "1f44f4df71d985e9318086047b2c1c5f3ded7031c90331324956454aaad8368e",
-        "neonymic": "697e3972990a5657f34d23e669175ab0f634a1be5dfb950dcf81e60b74818b21",
-        "egonymic": "9a21b303caf8506c560807631096095705d40d3d61db51f652ce2cac5539ab25",
-        "paleonymic": "9ee66b774449052da543842695d99fabc708dc"
+        "neonymic": "2011bc831bb2437e8fa32ea65807aac54761b3312438c2d00e8d725fc0813c7d",
+        "egonymic": "d50ab276405838392bebd45ba421fd747e41d8aa0f1b6a081082950d99c50610",
+        "paleonymic": "9ee66b774449052d43842695d99fabc708dc"
       }
     },
     "twin": {
       "worker": {
-        "v": 2,
+        "v": 3,
         "navigator": {
           "maxTouchPoints": 0,
           "platform": "Win32",
@@ -439,7 +437,6 @@
           }
         ],
         "canvas2d": {
-          "image": "295730788444223024308988e7692b9ff0a54657057c205dd1e5df18d118bf14",
           "paint": "fd07b8987e2a3ecb4b09e2d0c42f0c93596c1f40069f618f5d5eff3aaaba5719",
           "text": "65f1a38952741ce014e1d04d85b5155720a6c5e557c2c4c63ab8569e45cdb26b",
           "emoji": "af36ae6e703020e0ef164ffe7216a2290f378943885337e48680f3ffd00a2650",
@@ -489,14 +486,14 @@
       "nymic": {
         "protonymic": "a058f3a6a541226adec0c40d1a4bf5f36a1bfbd2e439ecf0e489fad58ffd698f",
         "tribunymic": "95303c994808f1cf2e7f24b7cb8cb9d26a5f17937a87c84e06d0424a1f287c2e",
-        "neonymic": "fc3931c807e0f04c96bc38dc0f44e5c103e6b3d227a5898f24536b1f552559d5",
-        "egonymic": "18b6cd7f777425d1fd05c5e5b805ff4b629d3ce23b17313c5f813b0d0374b4e3",
-        "paleonymic": "9ee66b7744d9052dda41842695d99fabcf08dc"
+        "neonymic": "fb31de0be568466ec1c2fff2ec6922b8e75e38a21c6e9a5c88b676c195865cca",
+        "egonymic": "a3e46a7da62dbbbba416d3b7790f6027b294653d43a6d57f0455ba80374c05bf",
+        "paleonymic": "9ee66b7744d9052d41842695d99fabcf08dc"
       }
     },
     "sibling": {
       "worker": {
-        "v": 2,
+        "v": 3,
         "navigator": {
           "maxTouchPoints": 0,
           "platform": "Win32",
@@ -544,10 +541,9 @@
           }
         ],
         "canvas2d": {
-          "image": "281f795ae86e912edd43dff7d3fd781f4d807f79fe3a77049b2926c9bc58bbf7",
           "paint": "20eac50125eadc9bfd35e9e009a155e8a63ceab7728c585d6fa93062bf5339de",
           "text": "5ccd030e387a29c213771569b83c1a57d4b267613184e1baab2c772b1c312b9e",
-          "emoji": "af36ae6e703020e0ef164ffe7216a2290f378943885337e48680f3ffd00a2650",
+          "emoji": "dfbdf833ee5e5f25ed0ffc2d21ba38869f5febe019fac93065cd57a5628b3864",
           "textMetricsSystemSum": 0.30000000000000004,
           "emojiSet": [
             "😀",
@@ -592,14 +588,14 @@
       "nymic": {
         "protonymic": "a058f3a6a541226adec0c40d1a4bf5f36a1bfbd2e439ecf0e489fad58ffd698f",
         "tribunymic": "1f44f4df71d985e9318086047b2c1c5f3ded7031c90331324956454aaad8368e",
-        "neonymic": "33aba0174642a75b9367a6e6746f09db7e9eb2a6b6b392df638bca713cb74c62",
-        "egonymic": "2a43dfe901e09c4880aafba4b5104bfe8bcfbf585b0515e7818a73fe2ae6b402",
-        "paleonymic": "9ee66b774449052ded29642695d99fabc570dc"
+        "neonymic": "684a776697e7925694b0a4392c2a1245c50e8625e18b135eda2c629abb15f759",
+        "egonymic": "deb5411acd79ab7591241432e8fe4e1fa6c828f58a5c69c5f13875771501031c",
+        "paleonymic": "9ee66b774449052d29641095d99fabc570dc"
       }
     },
     "phone": {
       "worker": {
-        "v": 2,
+        "v": 3,
         "navigator": {
           "maxTouchPoints": 5,
           "platform": "iPhone",
@@ -652,9 +648,9 @@
       "nymic": {
         "protonymic": "06f77e79dd70026777d31d64aa8c535e492759c8da42a13314bbd0ef13a647d3",
         "tribunymic": "fa0ef3e3cdf3fef7f7d6363971e802b37d60f65649ba066bdecefb3c3cdd260c",
-        "neonymic": "328b933b00d97cbe8ca3225d55eb28e1242dae3509988e8e8e77e81a76dba8cb",
-        "egonymic": "328b933b00d97cbe8ca3225d55eb28e1242dae3509988e8e8e77e81a76dba8cb",
-        "paleonymic": "010d1d0b44b831571d1d1d1d52cc061b744f4f"
+        "neonymic": "92ad8d263c0ca08ea149a5e447f06d957eecf21c84ecd051ffc4fc6684e1c45b",
+        "egonymic": "92ad8d263c0ca08ea149a5e447f06d957eecf21c84ecd051ffc4fc6684e1c45b",
+        "paleonymic": "010d1d0b44b831571d1d1d52cc061b744f4f"
       }
     }
   },
@@ -663,85 +659,85 @@
       "a": "laptop",
       "b": "laptop",
       "threshold": 0.8,
-      "level": "neonymic",
+      "level": "browser",
       "similarity": 1
     },
     {
       "a": "laptop",
       "b": "laptop",
       "threshold": 0.95,
-      "level": "neonymic",
+      "level": "browser",
       "similarity": 1
     },
     {
       "a": "laptop",
       "b": "updated",
       "threshold": 0.8,
-      "level": "egonymic",
-      "similarity": 0.8421052631578947
+      "level": "device",
+      "similarity": 0.8888888888888888
     },
     {
       "a": "laptop",
       "b": "updated",
       "threshold": 0.95,
-      "level": "egonymic",
-      "similarity": 0.8421052631578947
+      "level": "device",
+      "similarity": 0.8888888888888888
     },
     {
       "a": "laptop",
       "b": "twin",
       "threshold": 0.8,
-      "level": "paleonymic",
-      "similarity": 0.9473684210526315
+      "level": "similar",
+      "similarity": 0.9444444444444444
     },
     {
       "a": "laptop",
       "b": "twin",
       "threshold": 0.95,
       "level": "none",
-      "similarity": 0.9473684210526315
+      "similarity": 0.9444444444444444
     },
     {
       "a": "laptop",
       "b": "sibling",
       "threshold": 0.8,
-      "level": "tribunymic",
-      "similarity": 0.7368421052631579
+      "level": "model",
+      "similarity": 0.7222222222222222
     },
     {
       "a": "laptop",
       "b": "sibling",
       "threshold": 0.95,
-      "level": "tribunymic",
-      "similarity": 0.7368421052631579
+      "level": "model",
+      "similarity": 0.7222222222222222
     },
     {
       "a": "laptop",
       "b": "phone",
       "threshold": 0.8,
       "level": "none",
-      "similarity": 0.05263157894736842
+      "similarity": 0.05555555555555555
     },
     {
       "a": "laptop",
       "b": "phone",
       "threshold": 0.95,
       "level": "none",
-      "similarity": 0.05263157894736842
+      "similarity": 0.05555555555555555
     },
     {
       "a": "twin",
       "b": "updated",
       "threshold": 0.8,
-      "level": "none",
-      "similarity": 0.7894736842105263
+      "level": "similar",
+      "similarity": 0.8333333333333334
     },
     {
       "a": "twin",
       "b": "updated",
       "threshold": 0.95,
       "level": "none",
-      "similarity": 0.7894736842105263
+      "similarity": 0.8333333333333334
     }
   ]
 }

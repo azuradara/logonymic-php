@@ -24,7 +24,6 @@ final class Nymic
         ['screen', []],
         ['cssMedia', []],
         ['css', []],
-        ['canvas2d', ['image']],
         ['canvas2d', ['paint']],
         ['canvas2d', ['text']],
         ['canvas2d', ['emoji']],
@@ -92,10 +91,10 @@ final class Nymic
         $similarity = self::similarity($this->paleonymic, $other->paleonymic);
 
         return new MatchResult(match (true) {
-            $this->neonymic === $other->neonymic => Level::Neonymic,
-            $this->egonymic === $other->egonymic => Level::Egonymic,
-            $similarity >= $threshold => Level::Paleonymic,
-            $this->tribunymic === $other->tribunymic => Level::Tribunymic,
+            $this->neonymic === $other->neonymic => Level::Browser,
+            $this->egonymic === $other->egonymic => Level::Device,
+            $similarity >= $threshold => Level::Similar,
+            $this->tribunymic === $other->tribunymic => Level::Model,
             default => Level::None,
         }, $similarity);
     }
