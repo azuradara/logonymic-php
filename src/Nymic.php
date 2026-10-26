@@ -27,7 +27,6 @@ final class Nymic
         ['canvas2d', ['paint']],
         ['canvas2d', ['text']],
         ['canvas2d', ['emoji']],
-        ['canvas2d', ['textMetricsSystemSum', 'emojiSet']],
         ['canvasWebgl', ['gpu']],
         ['canvasWebgl', ['extensions']],
         ['canvasWebgl', ['parameters']],
@@ -118,7 +117,7 @@ final class Nymic
         $fields = (array) $worker;
         unset($fields['offlineAudioContext']);
         if (isset($fields['canvas2d'])) {
-            $fields['canvas2d'] = (object) array_intersect_key((array) $fields['canvas2d'], array_flip(['text', 'emoji', 'textMetricsSystemSum', 'emojiSet']));
+            $fields['canvas2d'] = (object) array_intersect_key((array) $fields['canvas2d'], array_flip(['text', 'emoji']));
         }
 
         return (object) $fields;
