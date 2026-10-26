@@ -15,13 +15,6 @@ composer require azuradara/logonymic
 
 ## In the browser
 
-`@azuradara/nymic` is on GitHub Packages. Add the scope to `.npmrc`, with a GitHub token that has `read:packages`:
-
-```ini
-@azuradara:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}
-```
-
 ```sh
 pnpm add @azuradara/nymic
 ```
@@ -40,7 +33,11 @@ await fetch('/orders', {
 })
 ```
 
-Without a bundler, load `node_modules/@azuradara/nymic/dist/nymic.js` with a script tag and call `Nymic.incant()`.
+Without a bundler, load it from jsDelivr and call `Nymic.incant()`:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/@azuradara/nymic/dist/nymic.js"></script>
+```
 
 ## On the server
 
