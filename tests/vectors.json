@@ -1,0 +1,747 @@
+{
+  "canonical": [
+    {
+      "input": null,
+      "canonical": "null",
+      "hash": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    {
+      "input": true,
+      "canonical": "true",
+      "hash": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "input": 0,
+      "canonical": "0",
+      "hash": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "input": 0,
+      "canonical": "0",
+      "hash": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "input": 1,
+      "canonical": "1",
+      "hash": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "input": -1.5,
+      "canonical": "-1.5",
+      "hash": "37c2b212b94e5372b33df924ea2a91182d90c237d0bf942c1768e794ebef2376"
+    },
+    {
+      "input": 0.1,
+      "canonical": "0.1",
+      "hash": "14be4b45f18e0d8c67b4f719b5144eee88497e413709d11d85b096d8e2346310"
+    },
+    {
+      "input": 124.04347624466754,
+      "canonical": "124.04347624466754",
+      "hash": "b21ce215edb2e187049b94082e2f91ff45ac82f0acb650b5c34632d5f82ed385"
+    },
+    {
+      "input": 1e-7,
+      "canonical": "1e-7",
+      "hash": "5b33e02f2c5103a05d32f6ba9cb058294452bfbf393967f68bb30c1bdcbbab22"
+    },
+    {
+      "input": 2147483647,
+      "canonical": "2147483647",
+      "hash": "972dcafa6fb4c2c88bce752fca4ab18c6bd88599330a4ad9813915b05bfbe76d"
+    },
+    {
+      "input": 1e+21,
+      "canonical": "1e+21",
+      "hash": "241c4643fa70b1dcde1205b71be4e3bebb17e9f880c8e1a33d0ead6c27271d3c"
+    },
+    {
+      "input": 100000000000000000000,
+      "canonical": "100000000000000000000",
+      "hash": "c344e9487bfbd5c4e03c9fb90d62a5dde5e00b54d55c46e9f4a803aea162b80c"
+    },
+    {
+      "input": 0.00001,
+      "canonical": "0.00001",
+      "hash": "661710915adfa7c40b5dbd6b2122dfa65b1accb57a8b7cdee05423ecfe14b0c7"
+    },
+    {
+      "input": 0.000001,
+      "canonical": "0.000001",
+      "hash": "159fb29a827ad04b260aa6c8ab6d8637f8f2b38af5c4f3cb49d6a21205e040f8"
+    },
+    {
+      "input": 1.5e-7,
+      "canonical": "1.5e-7",
+      "hash": "bbe54b73760f9025086de0202c3caa81352dc0260869890c9dca3cda39ba767f"
+    },
+    {
+      "input": -2.5e-8,
+      "canonical": "-2.5e-8",
+      "hash": "c0b884c9bb30550c4469e89352c6b296198d64ed2e1caac75c79f7947bb3e026"
+    },
+    {
+      "input": 1e+300,
+      "canonical": "1e+300",
+      "hash": "2b0de494c41db4c1bf0b41b0a3483db71f2b53a5e37caf5a61abee2d4169a935"
+    },
+    {
+      "input": 123456789012345680000,
+      "canonical": "123456789012345680000",
+      "hash": "725abf175290195635e55a971cf88e02a46d6d56e964ec2d8bc47614b9559062"
+    },
+    {
+      "input": 5e-324,
+      "canonical": "5e-324",
+      "hash": "c46e7ca1be4c8734f373a56530787288fa2058d73d07855e9247e949f811a42a"
+    },
+    {
+      "input": 1.7976931348623157e+308,
+      "canonical": "1.7976931348623157e+308",
+      "hash": "c2784e1abd6317452708f3fbf9641c16b959561bc621a1d408c23a20aa2cb585"
+    },
+    {
+      "input": 9007199254740992,
+      "canonical": "9007199254740992",
+      "hash": "c681da39d7273a6a24c15c9cac3a75526ff2ecf8ba4ee60346a0c70c8163bdb2"
+    },
+    {
+      "input": "",
+      "canonical": "\"\"",
+      "hash": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126"
+    },
+    {
+      "input": "é",
+      "canonical": "\"é\"",
+      "hash": "f2886017e9c7abacf804b54d64787dce2b611c9544ba21f3affdd126a6e50086"
+    },
+    {
+      "input": "line\nbreak \"quoted\" \\ /slash",
+      "canonical": "\"line\\nbreak \\\"quoted\\\" \\\\ /slash\"",
+      "hash": "feab5449c263e0e94498e3b0b4bb0b2b6512213ae68c7f582ddadc3289f56630"
+    },
+    {
+      "input": "😀",
+      "canonical": "\"😀\"",
+      "hash": "7a0c50b92434b015545fe93ab723db2d4b2cdd14a441405624a9ce8be29f1d5a"
+    },
+    {
+      "input": "\u001f",
+      "canonical": "\"\\u001f\"",
+      "hash": "6e1f297fd3657440862f051f44e4bc0ee6b26348011e5891e91aa1aa7e9c0759"
+    },
+    {
+      "input": [],
+      "canonical": "[]",
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "input": {},
+      "canonical": "{}",
+      "hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "input": [
+        1,
+        null,
+        "a"
+      ],
+      "canonical": "[1,null,\"a\"]",
+      "hash": "7b21644e4b2ff08a1ed1d0176b33130938a22ab51f2a1b3be5c44f3822e8eded"
+    },
+    {
+      "input": {
+        "b": 1,
+        "a": {
+          "d": [
+            3,
+            {
+              "f": 1,
+              "e": 2
+            }
+          ],
+          "c": null
+        }
+      },
+      "canonical": "{\"a\":{\"c\":null,\"d\":[3,{\"e\":2,\"f\":1}]},\"b\":1}",
+      "hash": "3431e5e4d649e9618e01e886f176f33af238ed7e5ed90f819d7fd7f8d4613698"
+    },
+    {
+      "input": {
+        "2": 5,
+        "10": 4,
+        "Z": 1,
+        "a": 2,
+        "_": 3
+      },
+      "canonical": "{\"10\":4,\"2\":5,\"Z\":1,\"_\":3,\"a\":2}",
+      "hash": "d6c7ad7832ee802aa9ecc7a91e5e696526e50a7c437be82b8e4d6e8668e93ebb"
+    }
+  ],
+  "workers": {
+    "laptop": {
+      "worker": {
+        "v": 2,
+        "navigator": {
+          "maxTouchPoints": 0,
+          "platform": "Win32",
+          "system": "Windows",
+          "vendor": "Google Inc.",
+          "deviceMemory": 8,
+          "hardwareConcurrency": 8,
+          "userAgentData": {
+            "architecture": "x86",
+            "bitness": "64",
+            "brands": [
+              "Google Chrome"
+            ],
+            "mobile": false,
+            "model": "",
+            "platform": "Windows"
+          }
+        },
+        "language": "fr-FR",
+        "timezone": "Africa, Casablanca",
+        "screen": {
+          "colorDepth": 24,
+          "pixelDepth": 24,
+          "size": [
+            1080,
+            1920
+          ]
+        },
+        "cssMedia": {
+          "anyHover": "hover",
+          "anyPointer": "fine",
+          "forcedColors": "none",
+          "hover": "hover",
+          "invertedColors": "none",
+          "monochrome": "0",
+          "pointer": "fine",
+          "reducedMotion": "no-preference"
+        },
+        "css": [
+          {
+            "caption": "16px \"Segoe UI\""
+          },
+          {
+            "icon": "12px \"Segoe UI\""
+          }
+        ],
+        "canvas2d": {
+          "image": "295730788444223024308988e7692b9ff0a54657057c205dd1e5df18d118bf14",
+          "paint": "fd07b8987e2a3ecb4b09e2d0c42f0c93596c1f40069f618f5d5eff3aaaba5719",
+          "text": "65f1a38952741ce014e1d04d85b5155720a6c5e557c2c4c63ab8569e45cdb26b",
+          "emoji": "af36ae6e703020e0ef164ffe7216a2290f378943885337e48680f3ffd00a2650",
+          "textMetricsSystemSum": 0.30000000000000004,
+          "emojiSet": [
+            "😀",
+            "☺"
+          ]
+        },
+        "canvasWebgl": {
+          "gpu": "Intel(R) UHD Graphics 620",
+          "extensions": [
+            "ANGLE_instanced_arrays",
+            "EXT_blend_minmax"
+          ],
+          "parameters": {
+            "MAX_TEXTURE_SIZE": 16384,
+            "ALIASED_LINE_WIDTH_RANGE": [
+              1,
+              1
+            ],
+            "VERTEX_SHADER.HIGH_FLOAT.precision": 23
+          }
+        },
+        "offlineAudioContext": {
+          "compressorGainReduction": -20.538286209106445,
+          "floatFrequencyDataSum": -486100.1137,
+          "floatTimeDomainDataSum": 2.7181530481588,
+          "sampleSum": 124.04347527516074,
+          "totalUniqueSamples": 4954
+        },
+        "fonts": [
+          "Cambria Math",
+          "Nirmala UI",
+          "Segoe UI Emoji"
+        ],
+        "media": [
+          {
+            "mimeType": "audio/mpeg",
+            "audioPlayType": "probably",
+            "videoPlayType": "probably",
+            "mediaSource": true,
+            "mediaRecorder": false
+          }
+        ]
+      },
+      "nymic": {
+        "protonymic": "a058f3a6a541226adec0c40d1a4bf5f36a1bfbd2e439ecf0e489fad58ffd698f",
+        "tribunymic": "1f44f4df71d985e9318086047b2c1c5f3ded7031c90331324956454aaad8368e",
+        "neonymic": "782070a3a42bf1e2bd24d423059750128dbd8ae86714cca93f42d105edd85eb1",
+        "egonymic": "9a21b303caf8506c560807631096095705d40d3d61db51f652ce2cac5539ab25",
+        "paleonymic": "9ee66b774449052dda41842695d99fabcf08dc"
+      }
+    },
+    "updated": {
+      "worker": {
+        "v": 2,
+        "navigator": {
+          "maxTouchPoints": 0,
+          "platform": "Win32",
+          "system": "Windows",
+          "vendor": "Google Inc.",
+          "deviceMemory": 8,
+          "hardwareConcurrency": 8,
+          "userAgentData": {
+            "architecture": "x86",
+            "bitness": "64",
+            "brands": [
+              "Google Chrome"
+            ],
+            "mobile": false,
+            "model": "",
+            "platform": "Windows"
+          }
+        },
+        "language": "fr-FR",
+        "timezone": "Africa, Casablanca",
+        "screen": {
+          "colorDepth": 24,
+          "pixelDepth": 24,
+          "size": [
+            1080,
+            1920
+          ]
+        },
+        "cssMedia": {
+          "anyHover": "hover",
+          "anyPointer": "fine",
+          "forcedColors": "none",
+          "hover": "hover",
+          "invertedColors": "none",
+          "monochrome": "0",
+          "pointer": "fine",
+          "reducedMotion": "no-preference"
+        },
+        "css": [
+          {
+            "caption": "16px \"Segoe UI\""
+          },
+          {
+            "icon": "12px \"Segoe UI\""
+          }
+        ],
+        "canvas2d": {
+          "image": "bc6d026e617e2204b3df23eabf2ed957fb7eadbb0412697b66dc39e4b77befc0",
+          "paint": "5c03f74b26cdc672070bf2d2ef45185012973b304d1194b7855025fb7d6bd105",
+          "text": "65f1a38952741ce014e1d04d85b5155720a6c5e557c2c4c63ab8569e45cdb26b",
+          "emoji": "af36ae6e703020e0ef164ffe7216a2290f378943885337e48680f3ffd00a2650",
+          "textMetricsSystemSum": 0.30000000000000004,
+          "emojiSet": [
+            "😀",
+            "☺"
+          ]
+        },
+        "canvasWebgl": {
+          "gpu": "Intel(R) UHD Graphics 620",
+          "extensions": [
+            "ANGLE_instanced_arrays",
+            "EXT_blend_minmax"
+          ],
+          "parameters": {
+            "MAX_TEXTURE_SIZE": 16384,
+            "ALIASED_LINE_WIDTH_RANGE": [
+              1,
+              1
+            ],
+            "VERTEX_SHADER.HIGH_FLOAT.precision": 23
+          }
+        },
+        "offlineAudioContext": {
+          "compressorGainReduction": -20.538286209106445,
+          "floatFrequencyDataSum": -486100.1137,
+          "floatTimeDomainDataSum": 2.7181530481588,
+          "sampleSum": 124.0434748024636,
+          "totalUniqueSamples": 4954
+        },
+        "fonts": [
+          "Cambria Math",
+          "Nirmala UI",
+          "Segoe UI Emoji"
+        ],
+        "media": [
+          {
+            "mimeType": "audio/mpeg",
+            "audioPlayType": "probably",
+            "videoPlayType": "probably",
+            "mediaSource": true,
+            "mediaRecorder": false
+          }
+        ]
+      },
+      "nymic": {
+        "protonymic": "a058f3a6a541226adec0c40d1a4bf5f36a1bfbd2e439ecf0e489fad58ffd698f",
+        "tribunymic": "1f44f4df71d985e9318086047b2c1c5f3ded7031c90331324956454aaad8368e",
+        "neonymic": "697e3972990a5657f34d23e669175ab0f634a1be5dfb950dcf81e60b74818b21",
+        "egonymic": "9a21b303caf8506c560807631096095705d40d3d61db51f652ce2cac5539ab25",
+        "paleonymic": "9ee66b774449052da543842695d99fabc708dc"
+      }
+    },
+    "twin": {
+      "worker": {
+        "v": 2,
+        "navigator": {
+          "maxTouchPoints": 0,
+          "platform": "Win32",
+          "system": "Windows",
+          "vendor": "Google Inc.",
+          "deviceMemory": 8,
+          "hardwareConcurrency": 8,
+          "userAgentData": {
+            "architecture": "x86",
+            "bitness": "64",
+            "brands": [
+              "Google Chrome"
+            ],
+            "mobile": false,
+            "model": "",
+            "platform": "Windows"
+          }
+        },
+        "language": "fr-FR",
+        "timezone": "Africa, Casablanca",
+        "screen": {
+          "colorDepth": 24,
+          "pixelDepth": 24,
+          "size": [
+            768,
+            1366
+          ]
+        },
+        "cssMedia": {
+          "anyHover": "hover",
+          "anyPointer": "fine",
+          "forcedColors": "none",
+          "hover": "hover",
+          "invertedColors": "none",
+          "monochrome": "0",
+          "pointer": "fine",
+          "reducedMotion": "no-preference"
+        },
+        "css": [
+          {
+            "caption": "16px \"Segoe UI\""
+          },
+          {
+            "icon": "12px \"Segoe UI\""
+          }
+        ],
+        "canvas2d": {
+          "image": "295730788444223024308988e7692b9ff0a54657057c205dd1e5df18d118bf14",
+          "paint": "fd07b8987e2a3ecb4b09e2d0c42f0c93596c1f40069f618f5d5eff3aaaba5719",
+          "text": "65f1a38952741ce014e1d04d85b5155720a6c5e557c2c4c63ab8569e45cdb26b",
+          "emoji": "af36ae6e703020e0ef164ffe7216a2290f378943885337e48680f3ffd00a2650",
+          "textMetricsSystemSum": 0.30000000000000004,
+          "emojiSet": [
+            "😀",
+            "☺"
+          ]
+        },
+        "canvasWebgl": {
+          "gpu": "Intel(R) UHD Graphics 620",
+          "extensions": [
+            "ANGLE_instanced_arrays",
+            "EXT_blend_minmax"
+          ],
+          "parameters": {
+            "MAX_TEXTURE_SIZE": 16384,
+            "ALIASED_LINE_WIDTH_RANGE": [
+              1,
+              1
+            ],
+            "VERTEX_SHADER.HIGH_FLOAT.precision": 23
+          }
+        },
+        "offlineAudioContext": {
+          "compressorGainReduction": -20.538286209106445,
+          "floatFrequencyDataSum": -486100.1137,
+          "floatTimeDomainDataSum": 2.7181530481588,
+          "sampleSum": 124.04347527516074,
+          "totalUniqueSamples": 4954
+        },
+        "fonts": [
+          "Cambria Math",
+          "Nirmala UI",
+          "Segoe UI Emoji"
+        ],
+        "media": [
+          {
+            "mimeType": "audio/mpeg",
+            "audioPlayType": "probably",
+            "videoPlayType": "probably",
+            "mediaSource": true,
+            "mediaRecorder": false
+          }
+        ]
+      },
+      "nymic": {
+        "protonymic": "a058f3a6a541226adec0c40d1a4bf5f36a1bfbd2e439ecf0e489fad58ffd698f",
+        "tribunymic": "95303c994808f1cf2e7f24b7cb8cb9d26a5f17937a87c84e06d0424a1f287c2e",
+        "neonymic": "fc3931c807e0f04c96bc38dc0f44e5c103e6b3d227a5898f24536b1f552559d5",
+        "egonymic": "18b6cd7f777425d1fd05c5e5b805ff4b629d3ce23b17313c5f813b0d0374b4e3",
+        "paleonymic": "9ee66b7744d9052dda41842695d99fabcf08dc"
+      }
+    },
+    "sibling": {
+      "worker": {
+        "v": 2,
+        "navigator": {
+          "maxTouchPoints": 0,
+          "platform": "Win32",
+          "system": "Windows",
+          "vendor": "Google Inc.",
+          "deviceMemory": 8,
+          "hardwareConcurrency": 8,
+          "userAgentData": {
+            "architecture": "x86",
+            "bitness": "64",
+            "brands": [
+              "Google Chrome"
+            ],
+            "mobile": false,
+            "model": "",
+            "platform": "Windows"
+          }
+        },
+        "language": "fr-FR",
+        "timezone": "Africa, Casablanca",
+        "screen": {
+          "colorDepth": 24,
+          "pixelDepth": 24,
+          "size": [
+            1080,
+            1920
+          ]
+        },
+        "cssMedia": {
+          "anyHover": "hover",
+          "anyPointer": "fine",
+          "forcedColors": "none",
+          "hover": "hover",
+          "invertedColors": "none",
+          "monochrome": "0",
+          "pointer": "fine",
+          "reducedMotion": "no-preference"
+        },
+        "css": [
+          {
+            "caption": "16px \"Segoe UI\""
+          },
+          {
+            "icon": "12px \"Segoe UI\""
+          }
+        ],
+        "canvas2d": {
+          "image": "281f795ae86e912edd43dff7d3fd781f4d807f79fe3a77049b2926c9bc58bbf7",
+          "paint": "20eac50125eadc9bfd35e9e009a155e8a63ceab7728c585d6fa93062bf5339de",
+          "text": "5ccd030e387a29c213771569b83c1a57d4b267613184e1baab2c772b1c312b9e",
+          "emoji": "af36ae6e703020e0ef164ffe7216a2290f378943885337e48680f3ffd00a2650",
+          "textMetricsSystemSum": 0.30000000000000004,
+          "emojiSet": [
+            "😀",
+            "☺"
+          ]
+        },
+        "canvasWebgl": {
+          "gpu": "Intel(R) UHD Graphics 620",
+          "extensions": [
+            "ANGLE_instanced_arrays",
+            "EXT_blend_minmax"
+          ],
+          "parameters": {
+            "MAX_TEXTURE_SIZE": 16384,
+            "ALIASED_LINE_WIDTH_RANGE": [
+              1,
+              1
+            ],
+            "VERTEX_SHADER.HIGH_FLOAT.precision": 23
+          }
+        },
+        "offlineAudioContext": {
+          "compressorGainReduction": -20.538286209106445,
+          "floatFrequencyDataSum": -486100.1137,
+          "floatTimeDomainDataSum": 2.7181530481588,
+          "sampleSum": 124.04,
+          "totalUniqueSamples": 4954
+        },
+        "fonts": [
+          "Cambria Math"
+        ],
+        "media": [
+          {
+            "mimeType": "audio/mpeg",
+            "audioPlayType": "probably",
+            "videoPlayType": "probably",
+            "mediaSource": true,
+            "mediaRecorder": false
+          }
+        ]
+      },
+      "nymic": {
+        "protonymic": "a058f3a6a541226adec0c40d1a4bf5f36a1bfbd2e439ecf0e489fad58ffd698f",
+        "tribunymic": "1f44f4df71d985e9318086047b2c1c5f3ded7031c90331324956454aaad8368e",
+        "neonymic": "33aba0174642a75b9367a6e6746f09db7e9eb2a6b6b392df638bca713cb74c62",
+        "egonymic": "2a43dfe901e09c4880aafba4b5104bfe8bcfbf585b0515e7818a73fe2ae6b402",
+        "paleonymic": "9ee66b774449052ded29642695d99fabc570dc"
+      }
+    },
+    "phone": {
+      "worker": {
+        "v": 2,
+        "navigator": {
+          "maxTouchPoints": 5,
+          "platform": "iPhone",
+          "system": "iPhone",
+          "vendor": "Apple Computer, Inc."
+        },
+        "language": "ar-MA",
+        "timezone": "Africa, Casablanca",
+        "screen": {
+          "colorDepth": 24,
+          "pixelDepth": 24,
+          "size": [
+            390,
+            844
+          ]
+        },
+        "cssMedia": {
+          "anyHover": "none",
+          "anyPointer": "coarse",
+          "forcedColors": "none",
+          "hover": "none",
+          "invertedColors": "none",
+          "monochrome": "0",
+          "pointer": "coarse",
+          "reducedMotion": "no-preference"
+        },
+        "css": [
+          {
+            "caption": "13px \"Helvetica Neue\""
+          }
+        ],
+        "canvas2d": {
+          "textMetricsSystemSum": 12.5,
+          "emojiSet": [
+            "😀"
+          ]
+        },
+        "canvasWebgl": {
+          "gpu": "Apple GPU",
+          "extensions": [
+            "EXT_blend_minmax"
+          ],
+          "parameters": {
+            "MAX_TEXTURE_SIZE": 16384
+          }
+        },
+        "fonts": [],
+        "media": []
+      },
+      "nymic": {
+        "protonymic": "06f77e79dd70026777d31d64aa8c535e492759c8da42a13314bbd0ef13a647d3",
+        "tribunymic": "fa0ef3e3cdf3fef7f7d6363971e802b37d60f65649ba066bdecefb3c3cdd260c",
+        "neonymic": "328b933b00d97cbe8ca3225d55eb28e1242dae3509988e8e8e77e81a76dba8cb",
+        "egonymic": "328b933b00d97cbe8ca3225d55eb28e1242dae3509988e8e8e77e81a76dba8cb",
+        "paleonymic": "010d1d0b44b831571d1d1d1d52cc061b744f4f"
+      }
+    }
+  },
+  "matches": [
+    {
+      "a": "laptop",
+      "b": "laptop",
+      "threshold": 0.8,
+      "level": "neonymic",
+      "similarity": 1
+    },
+    {
+      "a": "laptop",
+      "b": "laptop",
+      "threshold": 0.95,
+      "level": "neonymic",
+      "similarity": 1
+    },
+    {
+      "a": "laptop",
+      "b": "updated",
+      "threshold": 0.8,
+      "level": "egonymic",
+      "similarity": 0.8421052631578947
+    },
+    {
+      "a": "laptop",
+      "b": "updated",
+      "threshold": 0.95,
+      "level": "egonymic",
+      "similarity": 0.8421052631578947
+    },
+    {
+      "a": "laptop",
+      "b": "twin",
+      "threshold": 0.8,
+      "level": "paleonymic",
+      "similarity": 0.9473684210526315
+    },
+    {
+      "a": "laptop",
+      "b": "twin",
+      "threshold": 0.95,
+      "level": "none",
+      "similarity": 0.9473684210526315
+    },
+    {
+      "a": "laptop",
+      "b": "sibling",
+      "threshold": 0.8,
+      "level": "tribunymic",
+      "similarity": 0.7368421052631579
+    },
+    {
+      "a": "laptop",
+      "b": "sibling",
+      "threshold": 0.95,
+      "level": "tribunymic",
+      "similarity": 0.7368421052631579
+    },
+    {
+      "a": "laptop",
+      "b": "phone",
+      "threshold": 0.8,
+      "level": "none",
+      "similarity": 0.05263157894736842
+    },
+    {
+      "a": "laptop",
+      "b": "phone",
+      "threshold": 0.95,
+      "level": "none",
+      "similarity": 0.05263157894736842
+    },
+    {
+      "a": "twin",
+      "b": "updated",
+      "threshold": 0.8,
+      "level": "none",
+      "similarity": 0.7894736842105263
+    },
+    {
+      "a": "twin",
+      "b": "updated",
+      "threshold": 0.95,
+      "level": "none",
+      "similarity": 0.7894736842105263
+    }
+  ]
+}

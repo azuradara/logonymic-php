@@ -1,0 +1,33 @@
+{
+    "name": "azuradara/logonymic",
+    "description": "Recompute and match nymic browser fingerprints on the server",
+    "license": "MIT",
+    "type": "library",
+    "keywords": ["fingerprint", "device", "fraud", "nymic"],
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.18",
+        "phpstan/phpstan": "^2.0",
+        "phpunit/phpunit": "^10.5 || ^11.5 || ^12.0 || ^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Logonymic\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Logonymic\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit",
+        "lint": ["pint --test", "phpstan analyse"]
+    }
+}
